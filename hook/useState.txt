@@ -1,0 +1,23 @@
+useState : sử dụng đến trạng thái (giá trị) của dữ liệu (state)
+Dùng khi: muốn thay đổi dữ liệu thì giao diện tự dộng được cập nhật 
+Cách dùng: 
+import {useState} from 'react'
+function Component(){
+    const [state, setState] = useState(initState)
+
+    ....
+}
+
+// tham số đầu vào: initState (state khởi tạo)
+đầu ra: mảng gồm ptu đầu tiên là state (nhận lần đầu là initState), và ptu tiếp theo là hàm setState (để sửa lại giá trị State)
+
+--Component được re-render sau khi `setState`
+--initState chỉ dùng cho lần đầu
+--setState với callback?
+--initState với callback?
+--setState là thay thế state bằng giá trị mới (không phải thêm)
+
+/*-- Two ways binding (rang buoc 2 chieu)
+react : one way binding
+vuejs : two way binding 
+ở đây ta học cách dùng state để áp dụng two way binding cho react
